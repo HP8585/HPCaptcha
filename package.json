@@ -1,0 +1,79 @@
+{
+  "name": "nuxt-hpcaptcha",
+  "version": "1.2.0",
+  "description": "Nuxt 3 HPCaptcha component module is a plain utility whereby you can have an advanced yet hassle-free captcha in an instant",
+  "repository": "https://github.com/HP8585/HPCaptcha",
+  "license": "MIT",
+  "author": {
+    "name": "Hussain Panahy",
+    "email": "hossein7090100@gmail.com",
+    "url": "https://github.com/HP8585"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.12.2",
+    "nuxt-icon": "^1.0.0-beta.7"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.3.7",
+    "@nuxt/eslint-config": "^0.3.13",
+    "@nuxt/module-builder": "^0.8.1",
+    "@nuxt/schema": "^3.12.2",
+    "@nuxt/test-utils": "^3.13.1",
+    "@types/node": "^20.14.9",
+    "changelogen": "^0.5.5",
+    "eslint": "^9.6.0",
+    "nuxt": "^3.12.2",
+    "typescript": "latest",
+    "vitest": "^1.6.0",
+    "vue-tsc": "^2.0.24"
+  },
+  "keywords": [
+      "nuxt",
+      "nuxt-module",
+      "nuxt module",
+      "nuxt3",
+      "recaptcha",
+      "captcha",
+      "nuxt-recaptcha",
+      "nuxt recaptcha",
+      "nuxt3-recaptcha",
+      "nuxt3 recaptcha",
+      "vue",
+      "vue recaptcha",
+      "vue-recaptcha",
+      "nuxt-captcha",
+      "nuxt captcha",
+      "vue captcha",
+      "vue3 captcha",
+      "vue-captcha",
+      "vue3-captcha",
+      "nuxt3-form",
+      "nuxt-form",
+      "nuxt form",
+      "nuxt3 form"
+    ]
+}
