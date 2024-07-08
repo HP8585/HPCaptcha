@@ -1,18 +1,28 @@
 With our module you can have your own customizable recaptcha in a matter of second!
 
-after installing module head into nuxt.config.ts and set it as follows below:
-export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules:["nuxt-hpcaptcha"]
+after installing module head into nuxt.config.ts and set it as follows below:  
+
+>  export default defineNuxtConfig({  
+ devtools: { enabled: true },  
+  modules:["nuxt-hpcaptcha"]  
 });
 
-then you can use our component in your template like this:
-<HPCaptcha/>
+then you can use our component in your template like this:  
+``<HPCaptcha/>``
 
 
-There are some properties and emits to let you customize the component in accordance to your needs:
+**There are some properties and emits to let you customize the component in accordance to your needs:**
 
-Props:
+### Props:
+<center>
+
+|Prop|HPCaptcha|HPCaptchaImg|
+|:---------:|:------------:|:----:|
+|captchaSize|✅|❌|
+|length|✅|❌|
+|bgclr|✅|
+
+</center>
 
 "captchaSize":
 type: String
@@ -51,12 +61,21 @@ description: When recaptcha input has a value the input will assume a border col
 
 ---------------------------------------------------------------------------------------
 
-Emits:
+### Emits:
+
+<center>
+
+|Emit|HPCaptcha|HPCaptchaImg|
+|:---------:|:------------:|:----:|
+|valid|✅|✅|
+|invalid|✅|✅|
+
+</center>
 
 "valid": When user clicks on the check button if the captcha matches, this emit will be called;
 
 "invalid": When user clicks on the check button if the captcha does not match, this emit will be called;
 
 
-My Github: HP8585
-My Email: hossein7090100@gmail.com
+**My Github: HP8585**  
+**My Email: hossein7090100@gmail.com**
