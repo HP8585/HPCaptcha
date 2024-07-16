@@ -1,6 +1,6 @@
 {
   "name": "nuxt-hpcaptcha",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Nuxt 3 HPCaptcha component library is a plain utility whereby you can have an advanced yet hassle-free captcha in an instant",
   "repository": "https://github.com/HP8585/HPCaptcha",
   "license": "MIT",

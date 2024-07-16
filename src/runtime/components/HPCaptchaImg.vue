@@ -1,4 +1,6 @@
 <script setup>
+import { defineProps, ref, onMounted, watchEffect } from "vue";
+
 const props = defineProps({
     theme:{
         type: String,
@@ -18,7 +20,7 @@ const props = defineProps({
     },
     boxSize: {
         type: String,
-        default: '14em'
+        default: '20em'
     }
 });
 const emits = defineEmits(['valid', 'invalid', 'update:modelValue']);
